@@ -21,7 +21,6 @@ popd
 # even for forward usage.
 pushd examples/demo-react-native-jest
 run_f "npm run test:android-release-ci"
-DETOX_EXPOSE_GLOBALS=0 run_f "npm run test:android-release-ci"
 popd
 
 # Early completion if this is just about RN compatibility -
@@ -32,7 +31,6 @@ fi
 
 pushd examples/demo-react-native
 run_f "npm run test:android-release-ci"
-DETOX_EXPOSE_GLOBALS=0 run_f "npm run test:android-release-ci"
 popd
 
 pushd examples/demo-plugin
