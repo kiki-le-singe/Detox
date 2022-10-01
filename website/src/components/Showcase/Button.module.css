@@ -1,0 +1,59 @@
+.button {
+  background-color: #5d71e5;
+  color: #ffffff;
+  box-sizing: border-box;
+  position: relative;
+  width: 217px;
+  height: 50px;
+  right: 40px;
+  top: 20px;
+  border: 1px solid #000000;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  background-color: #7633e5;
+  position: relative;
+  width: 217px;
+  height: 50px;
+  left: 20px;
+  top: 97px;
+}
+
+.button:active {
+  position: relative;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+
+  background: #5c25af;
+}
+
+.button a {
+  position: relative;
+  left: 9.22%;
+  right: 9.68%;
+  top: 24%;
+  bottom: 26%;
+  text-decoration: none;
+
+  /* T/T2 */
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  /* identical to box height, or 156% */
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .button {
+    width: auto;
+  }
+}

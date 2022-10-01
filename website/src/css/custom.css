@@ -30,3 +30,17 @@
 html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+.purple-text {
+  color: rebeccapurple;
+}
+
+.header-github-link:hover {
+  opacity: 0.6;
+}
+
+.header-github-link:before {
+  background: url('../../static/img/showcaseglyph/showcaseStarsNav.png') no-repeat;
+  content: 'Showcase';
+  display: flex;
+}

@@ -26,14 +26,10 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/wix/Detox/edit/master/docs/',
           docLayoutComponent: '@site/src/components/CustomLayout',
-          remarkPlugins: [
-            [require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }],
-          ],
+          remarkPlugins: [[require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }]]
         },
         pages: {
-          remarkPlugins: [
-            [require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }],
-          ],
+          remarkPlugins: [[require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }]]
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css')
@@ -61,7 +57,13 @@ const config = {
           {
             type: 'docsVersionDropdown',
             position: 'left',
-            dropdownActiveClassDisabled: true,
+            dropdownActiveClassDisabled: true
+          },
+          {
+            href: 'https://github.com/wix/Showcase',
+            'aria-label': 'Showcase',
+            position: 'right',
+            className: 'header-github-link'
           },
           {
             href: 'https://github.com/wix/Detox',
