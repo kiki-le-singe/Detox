@@ -21,11 +21,10 @@ function ShowcaseHeader() {
       <div className="container">
         <h1 className="hero__title">Users Showcase</h1>
         <p className="hero__subtitle">Check out who is using Detox to Gray box test their React Native Apps</p>
-        <div className={styles.button}>
-          <Link className="button" to="/docs/introduction/getting-started">
-            Join the Showcase!
-          </Link>
-        </div>
+
+        <Link to="/docs/introduction/getting-started" className={styles.button}>
+          Join the Showcase!
+        </Link>
       </div>
     </header>
   );
