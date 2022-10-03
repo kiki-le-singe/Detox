@@ -162,20 +162,23 @@ body {
   padding-bottom: 2.5rem !important;
 }
 
-.Showcase {
+.showcase {
   /* position: absolute; */
+  width: 100%;
   margin: auto;
-  width: cover;
   height: auto;
-  column-gap: 0px;
   /* left: 155px;
   top: 497px; */
   /* background-color: #131419; */
   background-color: #000000;
+
+  align-content: center;
+    justify-content: center;
+  display: flex;
 }
 
 @media screen and (max-width: 966px) {
-  .Showcase {
+  .showcase {
     padding: 2rem;
   }
 }
@@ -202,7 +205,7 @@ body {
   transition: transform 0.25s ease-in-out;
 }
 
-.showcaseSection .showcase {
+.showcaseSection .showcaseCard {
   border: 1px solid black;
   border-radius: 10px;
   display: flex;
@@ -488,7 +491,7 @@ html[data-theme="dark"] {
             transform: scale3d(1.03, 1.03, 1);
         }
 
- 
+
 
         .showcaseContent {
             padding: 8px 16px 0;

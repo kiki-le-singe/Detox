@@ -8,15 +8,15 @@ import Link from '@docusaurus/Link';
 
 function Card({ title, image, link1, link2 }) {
   return (
-    <section className={styles.Showcase}>
-      <div className={clsx('col col--4')}>
+    <section>
+      <div>
         <div className={styles.showcaseSection}>
           <div className={styles.logos}>
-            <div className={styles.showcaseSection.showcase}>
+            <div className={styles.showcaseSection.showcaseCard}>
               <div className={styles.iconBox}>
                 <img src={image} className="imageShowcase" />
               </div>
-              <div className={styles.showcase.showcaseContent}>
+              <div>
                 <div>
                   <h3>{title}</h3>
                   <p className="showcaseLinks"></p>
@@ -38,18 +38,17 @@ function Card({ title, image, link1, link2 }) {
 
 function Showcase() {
   return (
-    <section className={styles.showcase}>
-      <div className={styles.Showcase}>
-        <div className="showcase">
-          <div>
-            <div className="Showcase">
-              <div className="row">
-                {cardList.map((props, idx) => (
-                  <Card key={idx} {...props} />
-                ))}
-              </div>
-            </div>
-          </div>
+    <section>
+      <div className={styles.showcase}>
+        <div className="row" style={{
+          justifyContent: 'center',
+          alignItems: 'center',
+          display: 'flex',
+          maxWidth: 1300,
+        }}>
+          {cardList.map((props, idx) => (
+            <Card key={idx} {...props} />
+          ))}
         </div>
       </div>
     </section>
