@@ -9,32 +9,32 @@
     {
       "title": "Valora",
       "image": "require('@site/static/img/showcaseglyph/valora.png').default",
-      "link1": "https://play.google.com/store/apps/details?id=com.shopify.mobile&hl=en_US&gl=US",
+      "link1": "https://play.google.com/store/apps/details?id=co.clabs.valora",
       "link2": "https://apps.apple.com/us/app/shopify/id1058959277"
     },
     {
       "title": "Wix Spaces",
       "image": "require('@site/static/img/showcaseglyph/wixspaces.png').default",
-      "link1": "",
-      "link2": ""
+      "link1": "https://play.google.com/store/apps/details?id=com.wix.android",
+      "link2": "https://apps.apple.com/us/app/spaces-follow-businesses/id1099748482"
     },
     {
       "title": "Wix Owner",
       "image": "require('@site/static/img/showcaseglyph/wixowner.png').default",
-      "link1": "",
-      "link2": ""
+      "link1": "https://play.google.com/store/apps/details?id=com.wix.admin",
+      "link2": "https://apps.apple.com/us/app/wix-owner-website-builder/id1545924344"
     },
     {
       "title": "React Native",
       "image": "require('@site/static/img/showcaseglyph/reactnative.png').default",
-      "link1": "",
+      "link1": "https://play.google.com/store/apps/details?id=com.thesevenitsolutions.reactnative",
       "link2": ""
     },
     {
       "title": "Rocket Chat",
       "image": "require('@site/static/img/showcaseglyph/rocketchat.png').default",
-      "link1": "",
-      "link2": ""
+      "link1": "https://play.google.com/store/search?q=rocket%20chat&c=apps",
+      "link2": "https://apps.apple.com/us/app/rocket-chat/id1148741252"
     },
     {
       "title": "WealthSimple",
@@ -45,8 +45,8 @@
     {
       "title": "Pitch",
       "image": "require('@site/static/img/showcaseglyph/pitch.png').default",
-      "link1": "",
-      "link2": ""
+      "link1": "https://play.google.com/store/apps/details?id=com.pitch.android&gl=IL",
+      "link2": "https://apps.apple.com/us/app/pitch-collaborate-on-decks/id1551335606?platform=iphone"
     },
     {
       "title": "React Native datetimepicker",
@@ -57,20 +57,20 @@
     {
       "title": "Maiia",
       "image": "require('@site/static/img/showcaseglyph/maiia.png').default",
-      "link1": "",
-      "link2": ""
+      "link1": "https://apps.apple.com/fr/app/maiia-t%C3%A9l%C3%A9consultation-rdv/id1489590732?agc_click_id=596983349311986688",
+      "link2": "https://apps.apple.com/fr/app/maiia-t%C3%A9l%C3%A9consultation-rdv/id1489590732?agc_click_id=596983166549379072"
     },
     {
       "title": "Noona",
       "image": "require('@site/static/img/showcaseglyph/noona.png').default",
-      "link1": "",
-      "link2": ""
+      "link1": "https://play.google.com/store/apps/details?id=com.timatorgmobile&gl=IL",
+      "link2": "https://apps.apple.com/is/app/noona-book-anything/id1448498295"
     },
     {
       "title": "OMNON NOTES",
       "image": "require('/img/showcaseglyph/omnonnotes.png').default",
-      "link1": "",
-      "link2": ""
+      "link1": "https://play.google.com/store/apps/details?id=com.nieratechinc.omnomnotes&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1",
+      "link2": "https://apps.apple.com/us/app/omnom-notes/id1505867777?ls=1"
     }
   ]
 }

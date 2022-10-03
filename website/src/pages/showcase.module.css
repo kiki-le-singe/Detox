@@ -41,26 +41,35 @@ body {
 }
 
 .button {
-  background-color: #5d71e5;
+  background-color: #a773ff;
   color: #ffffff;
   box-sizing: border-box;
+  display: flex;
   position: relative;
-  width: 217px;
-  height: 50px;
-  right: 40px;
-  top: 20px;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 45px;
+  border-radius: 10px;
   border: 1px solid #000000;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 2px 2px #7633e5);
 }
 
 .button:focus {
   outline: none;
 }
 
+.button .button--secondary {
+  background-color: #7633e5;
+  color: #ffffff;
+  width: 500px;
+}
+
 .button:hover {
   background-color: #7633e5;
-  width: 217px;
-  height: 50px;
   border: 1 px solid #000000;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   /* position: relative; */
@@ -70,28 +79,28 @@ body {
   top: 97px; */
 }
 
-.button:active {
-  /* position: absolute;
+/* .button:active {
+  position: absolute;
   left: 0%;
   right: 0%;
   top: 0%;
-  bottom: 0%; */
+  bottom: 0%;
 
   background: #5c25af;
-}
+} */
 
 .button a {
-  position: relative;
+  /* position: relative;
   left: 9.22%;
   right: 9.68%;
   top: 24%;
-  bottom: 26%;
+  bottom: 26%; */
   text-decoration: none;
 
   /* T/T2 */
   font-family: 'Nunito Sans';
   font-style: normal;
-  font-weight: 300;
+  font-weight: 100px;
   font-size: 16px;
   line-height: 25px;
   /* identical to box height, or 156% */
@@ -104,7 +113,7 @@ body {
   margin: 0 auto;
   margin-right: 25px;
   display: inline;
-  background-color: #000000;
+  background-color: #161a20;
   color: #ffffff;
   padding: 3px 12px;
   text-align: center;
@@ -116,7 +125,7 @@ body {
 }
 
 .storeButton:hover {
-  background-color: #7633e5;
+  background-color: #5c25af;
   transition: transform 0.25s ease-in-out;
 }
 
@@ -141,37 +150,6 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 } */
 
-/* .subButtons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: row wrap;
-  width: 100%;
-  padding: 1.8rem 0;
-  position: relative;
-  overflow: hidden;
-  background: #7633e5;
-  color: white;
-}
-
-.discordButton {
-  background-color: #7289da;
-  background-image: url(../../static/img/join-us-white.svg);
-  background-repeat: no-repeat;
-  background-size: 76% 76%;
-  background-position: 50% 62%;
-  height: 30px;
-  width: 6rem;
-  border-radius: 0.3rem;
-  margin-left: 0.9rem;
-  cursor: pointer;
-  border-width: 0;
-}
-
-.discordButton:hover {
-  background-color: #687ecb;
-} */
-
 * {
   margin: 0;
   padding: 0;
@@ -185,13 +163,15 @@ body {
 }
 
 .Showcase {
-  position: absolute;
-  margin: 80px 0px 0px 54px;
-  width: 1291px;
+  /* position: absolute; */
+  margin: auto;
+  width: cover;
   height: auto;
-  left: 155px;
-  top: 497px;
-  background-color: #131419;
+  column-gap: 0px;
+  /* left: 155px;
+  top: 497px; */
+  /* background-color: #131419; */
+  background-color: #000000;
 }
 
 @media screen and (max-width: 966px) {
@@ -208,23 +188,17 @@ body {
   border-radius: 5%;
   margin: 80px 10px 50px 50px;
   width: 310px;
-  height: 230px;
-  background: #212122;
+  /* height: 230px; */
+  background: #000000;
   /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
   /* display: flex; */
   /* text-align: center; */
 }
 
 .showcaseSection:hover {
-  /* cursor: pointer;
-  filter: drop-shadow(0 4 4 crimson);
-  background: radial-gradient(20% 20% at top left, #7633e5 0%, #5d71e5 100%);
-  transition: transform 0.25s ease-in-out; */
-  /* background: #ffffff; */
   border: 1px solid #000000;
   box-shadow: 0px 2px 24px hsla(237, 19%, 13%, 1);
   background: radial-gradient(100% 100% at 1.07% 0%, rgba(255, 99, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
-  /* filter: drop-shadow(0px 4px 4px rgba(236, 8, 8, 0.25)); */
   transition: transform 0.25s ease-in-out;
 }
 
@@ -256,10 +230,13 @@ body {
 }
 
 .logos {
-  grid-gap: 28px;
+  box-sizing: content-box;
+  /* grid-gap: 28px; */
   display: grid;
   grid-template-columns: 1fr;
   margin: 20px 20px 16px;
+  /* display: -webkit-flex;
+  -webkit-flex-flow: row; */
 }
 
 /* .showcaseSection .articleButton {

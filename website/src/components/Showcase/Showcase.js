@@ -8,13 +8,13 @@ import Link from '@docusaurus/Link';
 
 function Card({ title, image, link1, link2 }) {
   return (
-    <section className={styles.showcase}>
+    <section className={styles.Showcase}>
       <div className={clsx('col col--4')}>
         <div className={styles.showcaseSection}>
           <div className={styles.logos}>
             <div className={styles.showcaseSection.showcase}>
               <div className={styles.iconBox}>
-                <img src={image} className="iconBackground image" />
+                <img src={image} className="imageShowcase" />
               </div>
               <div className={styles.showcase.showcaseContent}>
                 <div>
@@ -24,7 +24,7 @@ function Card({ title, image, link1, link2 }) {
                     <a href={link1}>Google Play</a>
                   </button>
                   <button className={styles.storeButton}>
-                    <a href={link2}>Apple Store</a>
+                    <a href={link2}>App Store</a>
                   </button>
                 </div>
               </div>

@@ -22,27 +22,27 @@ function ShowcaseHeader() {
         <h1 className="hero__title">Users Showcase</h1>
         <p className="hero__subtitle">Check out who is using Detox to Gray box test their React Native Apps</p>
         <div className={styles.button}>
-          <Button className="button button--secondary button--lg">
-            <a href="/docs/introduction/getting-started">Join the Detox Showcase!</a>
-          </Button>
+          <Link className="button" to="/docs/introduction/getting-started">
+            Join the Showcase!
+          </Link>
         </div>
       </div>
     </header>
   );
 }
 
-function ShowcaseSubHeader() {
-  return (
-    <div className={styles.subButtons}>
-      <a
-        href="https://twitter.com/detoxe2e"
-        className="twitter-follow-button"
-        style={{ color: '#ffffff' }}
-        data-size="large"
-        data-show-count="true"></a>
-    </div>
-  );
-}
+// function ShowcaseSubHeader() {
+//   return (
+//     <div className={styles.subButtons}>
+//       <a
+//         href="https://twitter.com/detoxe2e"
+//         className="twitter-follow-button"
+//         style={{ color: '#ffffff' }}
+//         data-size="large"
+//         data-show-count="true"></a>
+//     </div>
+//   );
+// }
 
 // class App extends Component {
 //     render() {
@@ -61,7 +61,7 @@ export default function Home() {
       <StandWithUkraine />
       <Layout>
         <ShowcaseHeader />
-        <ShowcaseSubHeader />
+
         <main>
           <Card />
         </main>

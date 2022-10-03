@@ -17,7 +17,9 @@
 }
 
 .footer--dark {
-  background: #212122;
+  /* background: #212122; */
+  background: #000000;
+  border-top: 0.05px solid gray;
 }
 
 .docusaurus-highlight-code-line {
@@ -31,10 +33,6 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.purple-text {
-  color: rebeccapurple;
-}
-
 .header-github-link:hover {
   opacity: 0.6;
 }
@@ -42,5 +40,12 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 .header-github-link:before {
   background: url('../../static/img/showcaseglyph/showcaseStarsNav.png') no-repeat;
   content: 'Showcase';
-  display: flex;
+  display: inline-flexbox;
+}
+
+.imageShowcase {
+  width: 70px;
+  height: 70px;
+  filter: drop-shadow(0 4 4 0 #000000);
+  border-radius: 25%;
 }
