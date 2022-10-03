@@ -162,7 +162,7 @@ body {
   padding-bottom: 2.5rem !important;
 }
 
-.Showcase {
+.showcase {
   /* position: absolute; */
   margin: auto;
   width: cover;
@@ -175,7 +175,7 @@ body {
 }
 
 @media screen and (max-width: 966px) {
-  .Showcase {
+  .showcase {
     padding: 2rem;
   }
 }
@@ -202,14 +202,14 @@ body {
   transition: transform 0.25s ease-in-out;
 }
 
-.showcaseSection .showcase {
+.showcaseSection {
   border: 1px solid black;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   position: relative;
-  background-color: blue;
+
   transition: transform 0.25s ease-in-out;
 }
 
