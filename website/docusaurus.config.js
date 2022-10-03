@@ -60,7 +60,7 @@ const config = {
             dropdownActiveClassDisabled: true
           },
           {
-            href: 'showcase',
+            href: 'https://github.com/wix/Showcase',
             'aria-label': 'Showcase',
             position: 'right',
             className: 'header-github-link'
