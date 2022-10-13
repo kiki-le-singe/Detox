@@ -4,6 +4,7 @@
  */
 
 .heroBanner {
+  height: 725px;
   padding: 4rem 0;
   color: white;
   text-shadow: -1px 1px 0 rgba(0, 0, 0, 0.4), 0 0 5px rgba(255, 255, 255, 0.4), 0 0 10px rgba(255, 255, 255, 0.3),
@@ -13,11 +14,46 @@
   position: relative;
   overflow: hidden;
   background: rgb(21, 33, 107);
-  background-image: url(../../static/img/homepageglyph/homepage.jpg);
+  background-image: url(../../static/img/homepage/hero-image.jpg);
   background-position-x: center;
   background-position-y: top;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+html[data-theme='dark'] {
+  --ifm-background-color: #000000;
+  --ifm-background-surface-color: #000000;
+  --ifm-footer-background-color: #000000;
+}
+
+.heroBanner h1 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 120px;
+  position: absolute;
+  top: 54px;
+  left: 146px;
+}
+
+.heroBanner h2 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  position: absolute;
+  top: 203px;
+  left: 155px;
+  width: 473px;
+  height: 60px;
+  text-align: left;
+}
+
+@media screen and (max-width: 966px) {
+  .heroBanner {
+    padding: 2rem;
+  }
 }
 
 .githubStar {
@@ -35,6 +71,20 @@
   align-items: center;
   justify-content: center;
   text-shadow: none;
+  position: absolute;
+  width: 251px;
+  height: 50px;
+  top: 282px;
+  left: 170px;
+  border-radius: 10px;
+}
+
+.buttons a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 25px;
 }
 
 .subButtons {

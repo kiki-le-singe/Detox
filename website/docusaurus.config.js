@@ -60,15 +60,17 @@ const config = {
             dropdownActiveClassDisabled: true
           },
           {
-            href: 'Showcase',
-            'aria-label': 'Showcase',
+            href: 'https://github.com/wix/Showcase',
+            label: 'Showcase',
             position: 'right',
-            className: 'header-github-link'
+            className: 'header-showcase-link'
           },
           {
-            href: 'https://github.com/wix/Detox',
-            label: 'GitHub',
-            position: 'right'
+            href: 'https://github.com/wix/Detox', // remove the label and un-comment lines 121 - 138 in custom.css to add a GH logo here
+            label: 'Github',
+            'aria-label': 'GitHub repository',
+            position: 'right',
+            className: 'header-github-link'
           }
         ]
       },
@@ -78,7 +80,7 @@ const config = {
         indexName: 'detox'
       },
       footer: {
-        style: 'dark',
+        style: 'light',
         links: [
           {
             title: 'Docs',
@@ -111,15 +113,24 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/wix/Detox'
+                href: 'https://github.com/wix/Detox',
+                position: 'left',
+                className: 'footer-ghfooter',
+                favicon: '/static/img/showcase/ghfooter.svg'
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/detoxe2e/'
+                href: 'https://twitter.com/detoxe2e/',
+                position: 'left',
+                className: 'footer-twitterfooter',
+                favicon: '/static/img/showcase/twitterfooter.png'
               },
               {
                 label: 'Discord',
-                href: 'https://discord.gg/CkD5QKheF5'
+                href: 'https://discord.gg/CkD5QKheF5',
+                position: 'left',
+                className: 'footer-discordfooter',
+                favicon: '/static/img/showcase/discordfooter.png'
               }
             ]
           }
@@ -128,6 +139,11 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme
+      },
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: false,
+        respectPrefersColorScheme: false
       }
     }),
   scripts: [

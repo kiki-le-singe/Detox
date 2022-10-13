@@ -76,6 +76,12 @@ const cardList = [
     image: require('@site/static/img/showcase/bolt.webp').default,
     link1: 'https://play.google.com/store/search?q=bolt&c=apps',
     link2: 'https://apps.apple.com/us/app/bolt-fast-affordable-rides/id675033630'
+  },
+  {
+    title: 'Next',
+    image: require('@site/static/img/showcase/next.jpg').default,
+    link1: 'https://play.google.com/store/apps/details?id=com.nextdoor',
+    link2: 'https://apps.apple.com/us/app/nextdoor/id490318083'
   }
 ];
 
