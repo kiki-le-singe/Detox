@@ -277,6 +277,11 @@ html[data-theme='dark'] {
   padding: 1em 0;
 }
 
+/* .active,
+.navbar__item .navbar__link .header-showcase-link {
+  color: #048fc0;
+} */
+
 .content {
   padding: 0 1em 1em 1em;
   color: white;
