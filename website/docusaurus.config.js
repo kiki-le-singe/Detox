@@ -52,14 +52,10 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/wix/Detox/edit/master/docs/',
           docLayoutComponent: '@site/src/components/CustomLayout',
-          remarkPlugins: [
-            [require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }],
-          ],
+          remarkPlugins: [[require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }]]
         },
         pages: {
-          remarkPlugins: [
-            [require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }],
-          ],
+          remarkPlugins: [[require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }]]
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css')
@@ -91,6 +87,12 @@ const config = {
             label: 'API'
           },
           {
+            href: 'https://github.com/wix/Showcase',
+            label: 'Showcase',
+            position: 'left',
+            className: 'header-showcase-link'
+          },
+          {
             type: 'docsVersionDropdown',
             position: 'right',
             dropdownActiveClassDisabled: true,
@@ -109,7 +111,7 @@ const config = {
         indexName: 'detox'
       },
       footer: {
-        style: 'dark',
+        style: 'light',
         links: [
           {
             title: 'Docs',
@@ -142,15 +144,24 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/wix/Detox'
+                href: 'https://github.com/wix/Detox',
+                position: 'left',
+                className: 'footer-ghfooter',
+                favicon: '/static/img/showcase/ghfooter.svg'
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/detoxe2e/'
+                href: 'https://twitter.com/detoxe2e/',
+                position: 'left',
+                className: 'footer-twitterfooter',
+                favicon: '/static/img/showcase/twitterfooter.png'
               },
               {
                 label: 'Discord',
-                href: 'https://discord.gg/CkD5QKheF5'
+                href: 'https://discord.gg/CkD5QKheF5',
+                position: 'left',
+                className: 'footer-discordfooter',
+                favicon: '/static/img/showcase/discordfooter.png'
               }
             ]
           }
@@ -165,6 +176,11 @@ const config = {
         additionalLanguages: ['gradle', 'ini', 'java'],
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme
+      },
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: false,
+        respectPrefersColorScheme: false
       }
     }),
   scripts: [

@@ -13,10 +13,10 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <h2 className="hero__subtitle">{siteConfig.tagline}</h2>
         <div className={styles.buttons}>
           <Link className="button button--secondary button--lg" to="/docs/introduction/getting-started">
-            Getting Started with Detox
+            Getting Started <b>with Detox</b>
           </Link>
         </div>
       </div>
@@ -32,11 +32,10 @@ function HomepageSubHeader() {
         className="twitter-follow-button"
         style={{ color: '#ffffff' }}
         data-size="large"
-        data-show-count="true"
-      >
-        Follow @detoxe2e
+        data-show-count="true">
+        Follow us on <b>social networks</b>
       </a>
-      <button className={styles.discordButton} onClick={()=> window.open("https://discord.gg/CkD5QKheF5")} />
+      <button className={styles.discordButton} onClick={() => window.open('https://discord.gg/CkD5QKheF5')} />
       <iframe
         className={styles.githubStar}
         src="https://ghbtns.com/github-btn.html?user=wix&repo=detox&type=star&count=true&size=large"
@@ -48,6 +47,11 @@ function HomepageSubHeader() {
       />
     </div>
   );
+}
+
+export function Section({ element = 'section', children, className, background = 'light' }) {
+  const El = element;
+  return <El className={className ? `Section ${className} ${background}` : `Section ${background}`}>{children}</El>;
 }
 
 export default function Home() {
