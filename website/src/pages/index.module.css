@@ -21,12 +21,6 @@
   background-size: cover;
 }
 
-html[data-theme='dark'] {
-  --ifm-background-color: #000000;
-  --ifm-background-surface-color: #000000;
-  --ifm-footer-background-color: #000000;
-}
-
 .heroBanner h1 {
   font-family: 'Nunito Sans', sans-serif;
   font-style: normal;

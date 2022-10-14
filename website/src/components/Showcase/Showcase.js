@@ -1,34 +1,23 @@
-import React, { useEffect } from 'react';
+import clsx from 'clsx';
+import React from 'react';
+
+import cardList from '@site/showcase.json';
+
 import Card from './Card';
-import styles from '../../pages/showcase.module.css';
-// import cardList from './AppsList';
-import cardList from '../../../showcase.json';
+import styles from './Showcase.module.css';
 
 function Showcase() {
-  useEffect(() => {
-    // This will run when the page first loads and whenever the title changes
-    document.title = 'Detox | Showcase';
-  }, ['Detox | Showcase']);
+  const cards = cardList.map((props) => (
+    <Card key={props.title} {...props} />
+  ));
+
   return (
-    <section>
-      <div className={styles.showcase}>
-        <div
-          className="row"
-          style={{
-            justifyContent: 'center',
-            alignItems: 'center',
-            display: 'flex',
-            maxWidth: 1300
-          }}>
-          {cardList.map((props, idx) => (
-            <Card key={idx} {...props} />
-          ))}
-        </div>
-      </div>
+    <section className={clsx('container', styles.container)}>
+      <ul className={clsx('col', 'col--12', styles.list)}>
+        {cards}
+      </ul>
     </section>
   );
 }
-
-Showcase.title = 'Detox | Showcase';
 
 export default Showcase;
