@@ -10,14 +10,16 @@ import StandWithUkraine from '../components/StandWithUkraine';
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={styles.heroBanner}>
       <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <h2 className="hero__subtitle">{siteConfig.tagline}</h2>
-        <div className={styles.buttons}>
-          <Link className="button button--secondary button--lg" to="/docs/introduction/getting-started">
-            Getting Started <b>with Detox</b>
-          </Link>
+        <div className="row">
+          <h1 className={styles.heroBanner.h1}>{siteConfig.title}</h1>
+          <h2 className={styles.heroBanner.h2}>{siteConfig.tagline}</h2>
+          <div className={styles.buttons}>
+            <Link className="button button--secondary button--lg" to="/docs/introduction/getting-started">
+              Getting Started <b>with Detox</b>
+            </Link>
+          </div>
         </div>
       </div>
     </header>
@@ -26,25 +28,37 @@ function HomepageHeader() {
 
 function HomepageSubHeader() {
   return (
-    <div className={styles.subButtons}>
-      <a
-        href="https://twitter.com/detoxe2e"
-        className="twitter-follow-button"
-        style={{ color: '#ffffff' }}
-        data-size="large"
-        data-show-count="true">
-        Follow us on <b>social networks</b>
-      </a>
-      <button className={styles.discordButton} onClick={() => window.open('https://discord.gg/CkD5QKheF5')} />
-      <iframe
-        className={styles.githubStar}
-        src="https://ghbtns.com/github-btn.html?user=wix&repo=detox&type=star&count=true&size=large"
-        frameBorder="0"
-        scrolling="0"
-        width="170"
-        height="30"
-        title="GitHub"
-      />
+    <div className="subheader">
+      <div className="container">
+        <div className="row sub-buttons-text">
+          <div className="col col--3">
+            <div>
+              Follow us on <b>social networks:</b>
+            </div>
+          </div>
+          <div className="col col--9 social-buttons">
+            <button className={styles.discordButton} onClick={() => window.open('https://discord.gg/CkD5QKheF5')} />
+            <button className={styles.twitterButton}>
+              <a
+                href="https://twitter.com/detoxe2e"
+                className="twitter-follow-button"
+                style={{ color: '#ffffff' }}
+                data-size="large"
+                data-show-count="true"></a>
+            </button>
+            <iframe
+              className={styles.githubButton}
+              // src="https://ghbtns.com/github-btn.html?user=wix&repo=detox&type=star&count=true&size=large"
+              src="https://api.github.com/repos/wix/Detox?page=$i&per_page=100"
+              frameBorder="0"
+              scrolling="0"
+              width="170"
+              height="30"
+              title="GitHub"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

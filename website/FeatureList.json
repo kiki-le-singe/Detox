@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Supports Different Test Runners",
+    "image": "Detox/website/static/img/test-runner.svg",
+    "description": "<>Use Jest or Mocha as the test runner (spoiler: we have our favorite).</>"
+  },
+  {
+    "title": "Cross Platform",
+    "image": "Detox/website/static/img/cross-platform.svg",
+    "description": "<>Write cross-platform end-to-end tests in JavaScript. Currently supports iOS and Android.</>"
+  },
+  {
+    "title": "Debuggable",
+    "image": "Detox/website/static/img/debug.svg",
+    "description": "<>Modern async-await API allows breakpoints in asynchronous tests to work as expected.</>"
+  },
+  {
+    "title": "Automatically Synchronized",
+    "image": "Detox/website/static/img/sync.svg",
+    "description": "<>Stops flakiness at the core by monitoring asynchronous operations in your app.</>"
+  },
+  {
+    "title": "Made For CI",
+    "image": "Detox/website/static/img/ci.svg",
+    "description": "<>Execute your E2E tests on CI platforms like Travis CI, CircleCI or Jenkins without grief.</>"
+  },
+  {
+    "title": "Runs on Devices",
+    "image": "Detox/website/static/img/devices.svg",
+    "description": "<>Gain confidence to ship by testing your app on a device/simulator just like a real user (not yet supported on iOS).</>"
+  }
+]

@@ -7,11 +7,9 @@
   height: 725px;
   padding: 4rem 0;
   color: white;
-  text-shadow: -1px 1px 0 rgba(0, 0, 0, 0.4), 0 0 5px rgba(255, 255, 255, 0.4), 0 0 10px rgba(255, 255, 255, 0.3),
-    0 0 15px rgba(255, 255, 255, 0.2), 0 0 20px rgba(0, 0, 0, 0.5), 0 0 30px rgba(193, 0, 255, 0.5), 0 0 40px rgba(193, 0, 255, 0.5),
-    0 0 55px rgba(193, 0, 255, 0.5), 0 0 75px rgba(193, 0, 255, 0.5);
   text-align: center;
   position: relative;
+  display: flex;
   overflow: hidden;
   background: rgb(21, 33, 107);
   background-image: url(../../static/img/homepage/hero-image.jpg);
@@ -35,6 +33,7 @@ html[data-theme='dark'] {
   position: absolute;
   top: 54px;
   left: 146px;
+  display: flex;
 }
 
 .heroBanner h2 {
@@ -48,6 +47,7 @@ html[data-theme='dark'] {
   width: 473px;
   height: 60px;
   text-align: left;
+  display: flex;
 }
 
 @media screen and (max-width: 966px) {
@@ -93,26 +93,72 @@ html[data-theme='dark'] {
   justify-content: center;
   flex-flow: row wrap;
   width: 100%;
-  padding: 1.8rem 0;
+  padding: 0 10px;
   position: relative;
   overflow: hidden;
-  background: rgba(33, 33, 34, 1);
+  background: #131419;
+  height: 85px;
 }
 
+.sub-buttons-text {
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+
+/* .subButtonsText b {
+  color: #ffffff;
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+} */
+
 .discordButton {
-  background-color: #7289da;
-  background-image: url(../../static/img/join-us-white.svg);
+  background-color: #718cd8;
+  background-image: url(../../static/img/join-us-light.png);
   background-repeat: no-repeat;
-  background-size: 76% 76%;
-  background-position: 50% 62%;
-  height: 30px;
-  width: 6rem;
-  border-radius: 0.3rem;
-  margin-left: 0.9rem;
+  width: 141px;
+  height: 45px;
+  border-radius: 15px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   cursor: pointer;
-  border-width: 0;
+  margin-right: 15px;
 }
 
 .discordButton:hover {
-  background-color: #687ecb;
+  background-color: #819ff8;
+}
+
+.twitterButton {
+  background-color: #1e9eee;
+  background-image: url(../../static/img/twitter-follow.png);
+  background-repeat: no-repeat;
+  width: 199px;
+  height: 45px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.twitterButton:hover {
+  background-color: #43b1f6;
+}
+
+.githubButton {
+  background-color: #131419;
+  background-image: url(../../static/img/github-stars.png);
+  background-repeat: no-repeat;
+  /* width: 300px; */
+  height: 45px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin: 0 0 0 1rem;
+}
+
+.githubButton:hover {
+  background-color: #414c5c;
 }

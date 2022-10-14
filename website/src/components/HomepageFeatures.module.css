@@ -1,13 +1,73 @@
-.features {
+/* .features {
   display: flex;
   align-items: center;
   padding: 5rem 0;
   width: 100%;
-}
+} */
 
 .featureImage {
-  height: 64px;
-  width: 64px;
+  height: 60px;
+  width: 60px;
   stroke: white;
   stroke-width: 2px;
+}
+
+/* .benefitsSection {
+  width: 100%;
+  margin: auto;
+  height: auto;
+  align-content: left;
+  justify-content: left;
+  display: flex;
+} */
+
+.benefitsSection h1 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 70px;
+  color: #000000;
+  position: absolute;
+}
+
+.benefitsSection h3 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 35px;
+  color: #131419;
+}
+
+.benefitsSection p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  color: #131419;
+}
+
+[data-theme='dark'] .benefitsSection p {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .benefitsSection h3 {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .benefitsSection h1 {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .benefitsSection {
+  border: 1px solid #131419;
+}
+
+.col {
+  position: absolute;
+  width: 252px;
+  left: 592px;
+  top: 1234px;
 }
