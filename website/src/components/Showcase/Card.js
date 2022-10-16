@@ -1,23 +1,41 @@
-import clsx from 'clsx';
+import React, { useEffect } from 'react';
+import styles from '../../pages/showcase.module.css';
+// import cardList from './AppsList';
+import cardList from '../../../showcase.json';
 import Link from '@docusaurus/Link';
-import React from 'react';
 
-import styles from './Card.module.css';
-
-function Card({ className, title, image, linkGoogle, linkApple }) {
+function Card({ title, image, link1, link2 }) {
   return (
-    <li className={clsx(className, styles.card)}>
-      <img src={require(`@site/static/${image}`).default} className={styles.image} />
-      <span className={styles.title}>{title}</span>
-      <div className={styles.actions}>
-        <Link className={styles.storeButton} href={linkGoogle}>
-          Google Play
-        </Link>
-        <Link className={styles.storeButton} href={linkApple}>
-          App Store
-        </Link>
+    <section>
+      <div>
+        <div className={styles.showcaseSection}>
+          <div className={styles.logos}>
+            <div className={styles.showcaseSection.showcaseCard}>
+              <div className={styles.iconBox}>
+                <img src={image} className="imageShowcase" />
+              </div>
+              <div>
+                <div>
+                  <h3>{title}</h3>
+                  <p className="showcaseLinks"></p>
+                  <br></br>
+                  <Link className={styles.storeButton}>
+                    <a href={link1} target="_blank">
+                      Google Play
+                    </a>
+                  </Link>
+                  <Link className={styles.storeButton}>
+                    <a href={link2} target="_blank">
+                      App Store
+                    </a>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </li>
+    </section>
   );
 }
 

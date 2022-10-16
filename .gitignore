@@ -40,10 +40,9 @@ jspm_packages
 .node_repl_history
 
 ################
-# IDE
+# JetBrains
 ################
 .idea
-.vscode
 
 ## File-based project format:
 *.iws

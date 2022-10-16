@@ -49,6 +49,11 @@ function HomepageSubHeader() {
   );
 }
 
+export function Section({ element = 'section', children, className, background = 'light' }) {
+  const El = element;
+  return <El className={className ? `Section ${className} ${background}` : `Section ${background}`}>{children}</El>;
+}
+
 export default function Home() {
   return (
     <>
