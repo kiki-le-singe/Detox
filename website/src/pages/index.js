@@ -1,5 +1,5 @@
 import React from 'react';
-import clsx from 'clsx';
+// import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -13,12 +13,16 @@ function HomepageHeader() {
   return (
     <header className={styles.heroBanner}>
       <div className="container">
-        <h1 className={styles.heroBanner.h1}>{siteConfig.title}</h1>
-        <h2 className={styles.heroBanner.h2}>{siteConfig.tagline}</h2>
-        <div className={styles.buttons}>
-          <Link className="button button--secondary button--lg" to="/docs/introduction/getting-started">
-            Getting Started <b>with Detox</b>
-          </Link>
+        <div className="row">
+          <div className="col">
+            <h1 className={styles.heroBanner.h1}>{siteConfig.title}</h1>
+            <h2 className={styles.heroBanner.h2}>{siteConfig.tagline}</h2>
+            <div className={styles.buttons}>
+              <Link className="button button--secondary button--lg" to="/docs/introduction/getting-started">
+                Getting Started <b>with Detox</b>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -29,31 +33,33 @@ function HomepageSubHeader() {
   return (
     <div className={styles.subheader}>
       <div className="container">
-        <div className="col col--3">
-          <div className={styles.subButtonsText}>
-            Follow us on <b>social networks:</b>
+        <div className="row sub-buttons-text">
+          <div className="col col--4">
+            <div>
+              Follow us on <strong>social networks:</strong>
+            </div>
           </div>
-        </div>
-        <div className={styles.subButtons}>
-          <button className={styles.discordButton} onClick={() => window.open('https://discord.gg/CkD5QKheF5')} />
-          <button className={styles.twitterButton}>
-            <a
-              href="https://twitter.com/detoxe2e"
-              className="twitter-follow-button"
-              style={{ color: '#ffffff' }}
-              data-size="large"
-              data-show-count="true"></a>
-          </button>
-          <iframe
-            className={styles.githubButton}
-            // src="https://ghbtns.com/github-btn.html?user=wix&repo=detox&type=star&count=true&size=large"
-            src="https://api.github.com/repos/wix/Detox?page=$i&per_page=100"
-            frameBorder="0"
-            scrolling="0"
-            width="170"
-            height="30"
-            title="GitHub"
-          />
+          <div className="col col--8 flex-jc-fe">
+            <button className={styles.discordButton} onClick={() => window.open('https://discord.gg/CkD5QKheF5')} />
+            <button className={styles.twitterButton}>
+              <a
+                href="https://twitter.com/detoxe2e"
+                className="twitter-follow-button"
+                style={{ color: '#ffffff' }}
+                data-size="large"
+                data-show-count="true"></a>
+            </button>
+            <iframe
+              className={styles.githubButton}
+              // src="https://ghbtns.com/github-btn.html?user=wix&repo=detox&type=star&count=true&size=large"
+              src="https://api.github.com/repos/wix/Detox?page=$i&per_page=100"
+              frameBorder="0"
+              scrolling="0"
+              width="170"
+              height="30"
+              title="GitHub"
+            />
+          </div>
         </div>
       </div>
     </div>

@@ -7,14 +7,14 @@ import Feature from './Features';
 
 function HomepageFeatures() {
   return (
-    <section className={styles.features}>
+    <section>
       <div className="container">
         <div className="row">
           <div className="col">
             <h1>Detox benefits</h1>
           </div>
         </div>
-        <div className={styles.features}>
+        <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}

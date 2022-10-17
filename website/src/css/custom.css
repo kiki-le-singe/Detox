@@ -133,3 +133,8 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   justify-content: flex-end;
   display: flex;
 }
+
+.flex-jc-fe {
+  display: flex;
+  justify-content: flex-end;
+}

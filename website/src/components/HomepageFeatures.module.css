@@ -7,22 +7,23 @@ body {
   justify-content: center;
 }
 
-.features {
-  /* background-color: lightyellow; */
+/* .features {
+  background-color: lightyellow;
   padding: 10px;
   width: 100%;
   height: 691px;
-  /* border-radius: 12px; */
-  /* box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25); */
+  border-radius: 12px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: left;
   justify-content: left;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 140px;
   margin-top: 50px;
+  margin-bottom: 150px;
   text-align: left;
-}
+} */
 
 @media screen and (max-width: 966px) {
   .showcase {
