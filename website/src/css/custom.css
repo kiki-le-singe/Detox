@@ -133,9 +133,3 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   justify-content: flex-end;
   display: flex;
 }
-
-.subheader {
-  background-color: #131419;
-  padding: 10px 0;
-  color: #ffffff;
-}

@@ -27,35 +27,33 @@ function HomepageHeader() {
 
 function HomepageSubHeader() {
   return (
-    <div className="subheader">
+    <div className={styles.subheader}>
       <div className="container">
-        <div className="row sub-buttons-text">
-          <div className="col col--3">
-            <div>
-              Follow us on <b>social networks:</b>
-            </div>
+        <div className="col col--3">
+          <div className={styles.subButtonsText}>
+            Follow us on <b>social networks:</b>
           </div>
-          <div className="col col--9 social-buttons">
-            <button className={styles.discordButton} onClick={() => window.open('https://discord.gg/CkD5QKheF5')} />
-            <button className={styles.twitterButton}>
-              <a
-                href="https://twitter.com/detoxe2e"
-                className="twitter-follow-button"
-                style={{ color: '#ffffff' }}
-                data-size="large"
-                data-show-count="true"></a>
-            </button>
-            <iframe
-              className={styles.githubButton}
-              // src="https://ghbtns.com/github-btn.html?user=wix&repo=detox&type=star&count=true&size=large"
-              src="https://api.github.com/repos/wix/Detox?page=$i&per_page=100"
-              frameBorder="0"
-              scrolling="0"
-              width="170"
-              height="30"
-              title="GitHub"
-            />
-          </div>
+        </div>
+        <div className={styles.subButtons}>
+          <button className={styles.discordButton} onClick={() => window.open('https://discord.gg/CkD5QKheF5')} />
+          <button className={styles.twitterButton}>
+            <a
+              href="https://twitter.com/detoxe2e"
+              className="twitter-follow-button"
+              style={{ color: '#ffffff' }}
+              data-size="large"
+              data-show-count="true"></a>
+          </button>
+          <iframe
+            className={styles.githubButton}
+            // src="https://ghbtns.com/github-btn.html?user=wix&repo=detox&type=star&count=true&size=large"
+            src="https://api.github.com/repos/wix/Detox?page=$i&per_page=100"
+            frameBorder="0"
+            scrolling="0"
+            width="170"
+            height="30"
+            title="GitHub"
+          />
         </div>
       </div>
     </div>
