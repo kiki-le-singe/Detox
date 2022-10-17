@@ -9,17 +9,16 @@ import StandWithUkraine from '../components/StandWithUkraine';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
+
   return (
     <header className={styles.heroBanner}>
       <div className="container">
-        <div className="row">
-          <h1 className={styles.heroBanner.h1}>{siteConfig.title}</h1>
-          <h2 className={styles.heroBanner.h2}>{siteConfig.tagline}</h2>
-          <div className={styles.buttons}>
-            <Link className="button button--secondary button--lg" to="/docs/introduction/getting-started">
-              Getting Started <b>with Detox</b>
-            </Link>
-          </div>
+        <h1 className={styles.heroBanner.h1}>{siteConfig.title}</h1>
+        <h2 className={styles.heroBanner.h2}>{siteConfig.tagline}</h2>
+        <div className={styles.buttons}>
+          <Link className="button button--secondary button--lg" to="/docs/introduction/getting-started">
+            Getting Started <b>with Detox</b>
+          </Link>
         </div>
       </div>
     </header>

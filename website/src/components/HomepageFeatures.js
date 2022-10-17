@@ -14,7 +14,7 @@ function HomepageFeatures() {
             <h1>Detox Benefits</h1>
           </div>
         </div>
-        <div className="row">
+        <div className={styles.features}>
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
