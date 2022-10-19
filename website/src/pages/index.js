@@ -65,7 +65,7 @@ function HomepageSubHeader() {
                 2000
               </a>
             </button>
-            <button className={styles.githubStar} src="https://api.github.com/repos/wix/Detox?page=$i&type=star&coutn=true&size=large" />
+            {/* <button className={styles.githubStar} src="https://api.github.com/repos/wix/Detox?page=$i&type=star&coutn=true&size=large" /> */}
           </div>
         </div>
       </div>

@@ -54,20 +54,23 @@ const config = {
             position: 'left',
             label: 'Docs'
           },
-          // {
-          //   type: 'doc',
-          //   docId: 'API-reference',
-          //   position: 'left',
-          //   label: 'API'
-          // },
+          {
+            href: 'https://wix.github.io/Detox/docs/config/overview',
+            target: '_self',
+            docId: 'API-reference',
+            position: 'left',
+            label: 'API'
+          },
           {
             href: 'https://github.com/wix/Detox',
+            target: '_self',
             docId: 'blog',
             position: 'left',
             label: 'Blog'
           },
           {
             href: 'https://github.com/wix/Showcase',
+            target: '_self',
             label: 'Showcase',
             position: 'left',
             className: 'header-showcase-link'

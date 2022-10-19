@@ -131,7 +131,7 @@ html[data-theme='dark'] {
   font-weight: ;
   border-radius: 15px;
   cursor: pointer;
-  margin-left: 10px;
+  margin-left: 5px;
   display: flex;
   text-align: center;
 }
@@ -150,6 +150,7 @@ html[data-theme='dark'] {
   height: 35px;
   margin-top: 6px;
   margin-right: 15px;
+  margin-left: 6px;
   display: flex;
   text-align: center;
 }
@@ -205,6 +206,12 @@ html[data-theme='dark'] {
   height: 35px;
   border-radius: 3px;
   margin-top: 5px;
+  margin-left: 6px;
+}
+
+.githubStar:hover {
+  background: #313439;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .githubStar:hover a {
