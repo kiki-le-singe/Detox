@@ -11,7 +11,7 @@ function HomepageFeatures() {
       <div className="container">
         <div className="row">
           <div className="col">
-            <h1>Detox benefits</h1>
+            <h1 className="benefits-header">Detox benefits</h1>
           </div>
         </div>
         <div className="row">

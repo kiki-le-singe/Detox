@@ -31,10 +31,6 @@ body {
   }
 }
 
-/* .features p {
-  max-width: 300px;
-} */
-
 /* .benefitsSection {
   width: 100%;
   margin: auto;
@@ -43,17 +39,6 @@ body {
   justify-content: left;
   display: flex;
 } */
-
-.features h1 {
-  font-family: 'Nunito Sans', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 58px;
-  line-height: 70px;
-  color: #131419;
-  margin-left: 20px;
-  /* position: absolute; */
-}
 
 .features h3 {
   font-family: 'Nunito Sans', sans-serif;
@@ -86,13 +71,13 @@ body {
   color: #ffffff;
 }
 
-[data-theme='dark'] .features {
+/* [data-theme='dark'] .features {
   border: 1px solid #131419;
-}
+} */
 
-.col {
+/* .col {
   position: absolute;
   width: 252px;
   left: 592px;
   top: 1234px;
-}
+} */

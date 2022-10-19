@@ -28,6 +28,7 @@ html[data-theme='dark'] {
   font-style: normal;
   font-weight: 700;
   font-size: 120px;
+  line-height: 150px;
 }
 
 .heroBanner h2 {
@@ -35,19 +36,15 @@ html[data-theme='dark'] {
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
-  width: 473px;
   height: 60px;
   text-align: left;
+  max-width: 390px;
 }
 
 @media screen and (max-width: 966px) {
   .heroBanner {
     padding: 2rem;
   }
-}
-
-.githubStar {
-  margin: 0 1rem;
 }
 
 @media screen and (max-width: 966px) {
@@ -57,6 +54,7 @@ html[data-theme='dark'] {
 }
 
 .buttons {
+  display: flex;
   text-shadow: none;
   width: 251px;
   height: 50px;
@@ -68,7 +66,7 @@ html[data-theme='dark'] {
   font-weight: 300;
   font-size: 16px;
   font-style: normal;
-  line-height: 25px;
+  line-height: 35px;
 }
 
 .subheader {
@@ -83,17 +81,23 @@ html[data-theme='dark'] {
   align-items: left;
   justify-content: left;
   flex-direction: column;
-  text-align: left;
   width: 100%;
 }
-/* 
+
 .subButtons {
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
   display: flex;
-  padding: 0 10px;
+  padding: 10px 0;
   position: relative;
   overflow: hidden;
   background: #131419;
-} */
+  /* align-items: flex-end; */
+  /* justify-content: flex; */
+  text-align: left;
+}
 
 .subButtonsText {
   font-family: 'Nunito Sans', sans-serif;
@@ -102,71 +106,119 @@ html[data-theme='dark'] {
   font-size: 24px;
 }
 
-/* .subButtonsText b {
-  color: #ffffff;
-  font-family: 'Nunito Sans', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 35px;
-} */
-
 .discordButton {
-  background-color: #718cd8;
+  background-color: transparent;
   background-image: url(../../static/img/join-us-light.png);
   background-repeat: no-repeat;
   width: 141px;
   height: 45px;
   border-radius: 15px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   cursor: pointer;
   margin-right: 15px;
-  font-family: 'Nunito Sans', sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  display: flex;
-  align-items: left;
-  justify-content: left;
-  flex-direction: column;
-  text-align: left;
 }
 
 .discordButton:hover {
-  background-color: #819ff8;
+  background: #819ff8;
+  background-image: url(../../static/img/join-us-light.png);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .twitterButton {
-  background-color: #1e9eee;
   background-image: url(../../static/img/twitter-follow.png);
   background-repeat: no-repeat;
-  width: 199px;
+  width: 200px;
   height: 45px;
+  font-weight: ;
   border-radius: 15px;
   cursor: pointer;
+  margin-left: 10px;
+  display: flex;
+  text-align: center;
 }
 
 .twitterButton:hover {
-  background-color: #43b1f6;
+  background: #43b1f6;
+  background-image: url(../../static/img/twitter-follow.png);
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+}
+
+.twitterFollowers {
+  background-color: #23272f;
+  border-radius: 12px;
+  color: #ffffff;
+  width: 125px;
+  height: 35px;
+  margin-top: 6px;
+  margin-right: 15px;
+  display: flex;
+  text-align: center;
+}
+
+.twitterFollowers a {
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: red;
+}
+
+.twitterFollowers:hover {
+  background: #575a5d;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.twitterFollowers:hover a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .githubButton {
-  background-color: #131419;
+  background-color: #575a5d;
+  color: #ffffff;
   background-image: url(../../static/img/github-stars.png);
   background-repeat: no-repeat;
-  /* width: 300px; */
+  width: 93px;
   height: 45px;
-  border-radius: 15px;
+  border-radius: 10px;
   cursor: pointer;
-  margin: 0 0 0 1rem;
+  /* margin: 0 0 0 1rem; */
+  display: flex;
 }
 
 .githubButton:hover {
-  background-color: #414c5c;
+  background: #414c5c;
+  background-image: url(../../static/img/github-stars.png);
+  color: #ffffff;
   cursor: pointer;
 }
 
-/* .col {
-  padding: 0;
-  color: red;
-} */
+.githubStar {
+  margin: 0 1rem;
+  background-color: #23272f;
+  color: #ffffff;
+  width: 63px;
+  height: 35px;
+  border-radius: 3px;
+  margin-top: 5px;
+}
+
+.githubStar:hover a {
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #313439;
+  text-decoration: none;
+}
+
+.githubStar a {
+  color: #ffffff;
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: semi-bold;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25px;
+}

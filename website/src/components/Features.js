@@ -5,7 +5,7 @@ import FeatureList from './FeatureList';
 
 function Feature({ Svg, title, description }) {
   return (
-    <div className="col col--4">
+    <div className="col col--4 features-gap">
       <div>
         <Svg className="featureImage" alt={title} />
       </div>

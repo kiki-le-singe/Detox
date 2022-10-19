@@ -52,23 +52,35 @@ const config = {
             type: 'doc',
             docId: 'getting-started',
             position: 'left',
-            label: 'Documentation'
+            label: 'Docs'
           },
+          // {
+          //   type: 'doc',
+          //   docId: 'API-reference',
+          //   position: 'left',
+          //   label: 'API'
+          // },
           {
-            type: 'docsVersionDropdown',
+            href: 'https://github.com/wix/Detox',
+            docId: 'blog',
             position: 'left',
-            dropdownActiveClassDisabled: true
+            label: 'Blog'
           },
           {
             href: 'https://github.com/wix/Showcase',
             label: 'Showcase',
-            position: 'right',
+            position: 'left',
             className: 'header-showcase-link'
           },
           {
-            href: 'https://github.com/wix/Detox', // remove the label and un-comment lines 121 - 138 in custom.css to add a GH logo here
-            label: 'Github',
-            'aria-label': 'GitHub repository',
+            type: 'docsVersionDropdown',
+            position: 'right',
+            dropdownActiveClassDisabled: true
+          },
+          {
+            href: 'https://github.com/wix/Detox', // remove the aria label and un-comment lines 121 - 138 in custom.css to add a GH logo here
+            // label: 'Github',
+            'aria-label': 'GitHub',
             position: 'right',
             className: 'header-github-link'
           }
