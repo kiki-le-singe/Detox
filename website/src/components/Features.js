@@ -1,7 +1,5 @@
 import React from 'react';
 import './Features.css';
-// import FeatureList from '../../../website/FeatureList.json';
-import FeatureList from './FeatureList';
 
 function Feature({ Svg, title, description }) {
   return (

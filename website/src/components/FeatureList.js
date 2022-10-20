@@ -29,7 +29,15 @@ const FeatureList = [
   {
     title: 'Test Runner Agnostic',
     Svg: require('../../static/img/test-runner-light.svg').default, // taken from: https://uxwing.com/testing-icon/
-    description: <>Detox provides a set of APIs to use with any test runner or without it. It comes with Jest integration out of the box.</>
+    description: (
+      <>
+        Detox provides a set of APIs to use with any test runner or without it. It comes with{' '}
+        <a href="https://jestjs.io" target="_blank" rel="noopener noreferrer">
+          Jest
+        </a>{' '}
+        integration out of the box.
+      </>
+    )
   }
 ];
 
