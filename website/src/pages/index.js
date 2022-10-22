@@ -30,9 +30,9 @@ function HomepageHeader() {
 
 function HomepageSubHeader() {
   return (
-    <div className={styles.subheader}>
+    <div className={styles.subHeader}>
       <div className="container">
-        <div className="row sub-buttons-text">
+        <div className="row">
           <div className="col col--4">
             <div className={styles.subText}>
               Follow us on <strong>social networks:</strong>
@@ -44,14 +44,12 @@ function HomepageSubHeader() {
               src="../../static/img/join-us-white.svg"
               href="https://discord.gg/CkD5QKheF5"
               target="_blank"></a>
-
             <div className={styles.twitterFrame}>
               <iframe
                 src="https://platform.twitter.com/widgets/follow_button.html?screen_name=detoxe2e&show_screen_name=false&show_count=true&size=l"
                 title="Follow Detox on Twitter"
                 width="200"
                 height="37"></iframe>
-
               <iframe
                 className={styles.githubStar}
                 src="https://ghbtns.com/github-btn.html?user=wix&repo=detox&type=star&count=true&size=large"

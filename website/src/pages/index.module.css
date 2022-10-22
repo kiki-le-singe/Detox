@@ -57,7 +57,7 @@ html[data-theme='dark'] {
   line-height: 35px;
 }
 
-.subheader {
+.subHeader {
   background-color: #131419;
   padding: 10px 0;
   color: #ffffff;
@@ -68,26 +68,6 @@ html[data-theme='dark'] {
   display: flex;
   flex-direction: column;
   width: 100%;
-}
-
-.subButtons {
-  font-family: 'Nunito Sans', sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  display: flex;
-  padding: 10px 0;
-  position: relative;
-  overflow: hidden;
-  background: #131419;
-  text-align: left;
-}
-
-.subButtonsText {
-  font-family: 'Nunito Sans', sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
 }
 
 .subText {

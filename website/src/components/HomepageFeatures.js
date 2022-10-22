@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './HomepageFeatures.module.css';
-// import FeatureList from '../../../website/FeatureList.json';
 import FeatureList from './FeatureList';
 import Feature from './Features';
 
@@ -10,7 +9,7 @@ function HomepageFeatures() {
       <div className="container">
         <div className="row">
           <div className="col">
-            <h1 className="benefits-header">Detox benefits</h1>
+            <h1 className={styles.benefitsHeader}>Detox benefits</h1>
           </div>
         </div>
         <div className="row">

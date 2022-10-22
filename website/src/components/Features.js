@@ -5,7 +5,7 @@ function Feature({ Svg, title, description }) {
   return (
     <div className="col col--4 features-gap">
       <div>
-        <Svg className="featureImage" alt={title} />
+        <Svg className="feature-image" alt={title} />
       </div>
       <div>
         <h3>{title}</h3>
