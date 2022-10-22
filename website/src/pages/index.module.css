@@ -41,18 +41,6 @@ html[data-theme='dark'] {
   max-width: 390px;
 }
 
-@media screen and (max-width: 966px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
-
-@media screen and (max-width: 966px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
-
 .buttons {
   display: flex;
   text-shadow: none;
@@ -102,20 +90,30 @@ html[data-theme='dark'] {
   font-size: 24px;
 }
 
+.subText {
+  padding-top: 5px;
+}
+
 .discordButton {
-  /* background-color: transparent; */
-  background-image: url(../../static/img/join-us-light.png);
+  background-color: #7289da;
+  background-image: url(../../static/img/join-us-white.svg);
   background-repeat: no-repeat;
-  width: 141px;
-  height: 45px;
-  border-radius: 15px;
+  background-size: 76% 76%;
+  background-position: 50% 62%;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  width: 6rem;
+  border-radius: 0.3rem;
+  margin-right: 20px;
+  margin-top: 7px;
   cursor: pointer;
-  margin-right: 15px;
+  border-width: 0;
 }
 
 .discordButton:hover {
-  background: #819ff8;
-  background-image: url(../../static/img/join-us-light.png);
+  background-color: #819ff8;
+  transition: transform 0.25s ease-in-out;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -123,58 +121,40 @@ html[data-theme='dark'] {
   display: flex;
   align-items: center;
   padding-top: 8px;
+  padding-left: 5px;
 }
 
-/* .githubStar {
-  margin: 0 1rem;
-  background-color: #23272f;
-  color: #ffffff;
-  width: 63px;
-  height: 35px;
-  border-radius: 3px;
-  margin-top: 5px;
-  margin-left: 6px;
-}
-
-.githubStar:hover {
-  background: #313439;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.githubStar:hover a {
-  color: #ffffff;
-  cursor: pointer;
-  background-color: #313439;
-  text-decoration: none;
-}
-
-.githubStar a {
-  color: #ffffff;
-  font-family: 'Nunito Sans', sans-serif;
-  font-style: semi-bold;
-  font-weight: 600;
+.githubStar {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  padding-bottom: 7px;
   font-size: 16px;
-  line-height: 25px;
-} */
-/* 
-#count {
-  white-space: nowrap;
-  background: #23272f;
-  color: #ffffff;
+  line-height: 22px;
+  border-radius: 4px;
+  height: 37px;
 }
 
-#count a {
-  background: #23272f;
-  text-decoration: none;
+@media screen and (max-width: 966px) {
+  .heroBanner {
+    padding: 2rem;
+  }
 }
 
-#count:hover {
-  background: #2f3640;
-  color: #ffffff;
-} */
+@media screen and (max-width: 966px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
 
 @media only screen and (max-width: 600px) {
   .buttons a {
     font-size: 14px;
+  }
+
+  .twitterFrame {
+    display: block;
+    width: 100%;
+    float: none;
   }
 }
